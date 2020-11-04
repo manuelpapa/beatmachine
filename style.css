@@ -27,24 +27,22 @@ svg {
 }
 
 .kick-pad {
-  background: rgb(95, 156, 255);
+  background: rgb(166, 200, 255);
 }
 .snare-pad {
-  background: rgb(95, 255, 143);
+  background: rgb(188, 255, 208);
 }
 .hihat-pad {
-  background: rgb(255, 172, 95);
+  background: rgb(255, 216, 179);
 }
 .kick-pad.active {
-  border: 2px, solid, rgb(95, 156, 255);
+  background: rgb(95, 156, 255);
 }
 .snare-pad.active {
   background: rgb(95, 255, 143);
-  border: 2px, solid, rgb(95, 255, 143);
 }
 .hihat-pad.active {
   background: rgb(255, 172, 95);
-  border: 2px, solid, rgb(255, 172, 95);
 }
 
 .kick-track,
