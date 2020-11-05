@@ -10,7 +10,6 @@
     <div class="sequencer">
       <div class="kick-track">
         <div class="controls">
-          <h1>Kick</h1>
           <button data-track="0" class="mute kick-volume">
             <i class="fas fa-volume-mute"></i>
           </button>
@@ -53,7 +52,6 @@
       </div>
       <div class="snare-track">
         <div class="controls">
-          <h1>Snare</h1>
           <button data-track="1" class="mute snare-volume">
             <i class="fas fa-volume-mute"></i>
           </button>
@@ -96,7 +94,6 @@
         </div>
         <div class="hihat-track">
           <div class="controls">
-            <h1>Hihat</h1>
             <button data-track="2" class="mute hihat-volume">
               <i class="fas fa-volume-mute"></i>
             </button>
@@ -138,19 +135,20 @@
             </div>
           </div>
         </div>
+        <div class="menu">
+        <button class="play">Play</button>
+        <div class="tempo">
+            <p><span class="tempo-nr">125</span> bpm</p>
+          <input
+            type="range"
+            class="tempo-slider"
+            min="75"
+            max="200"
+            value="125"
+          />
+        </div>
       </div>
-      <button class="play">Play</button>
-      <div class="tempo">
-        <input
-          type="range"
-          class="tempo-slider"
-          min="75"
-          max="200"
-          value="125"
-        />
-        <p>Tempo: <span class="tempo-nr">125</span></p>
       </div>
-    </div>
     <audio
       class="kick-sound"
       src="https://github.com/manuelpapa/beatmachine/raw/main/sounds/kick-808.wav"
