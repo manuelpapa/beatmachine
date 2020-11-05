@@ -22,7 +22,7 @@ class DrumKit {
     this.classList.toggle("active");
   }
   repeat() {
-    let step = this.index % 8;
+    let step = this.index % 16;
     const activeBars = document.querySelectorAll(`.b${step}`);
     //Loop over the pads
     activeBars.forEach((bar) => {
@@ -48,7 +48,7 @@ class DrumKit {
     this.index++;
   }
   start() {
-    const interval = (60 / this.bpm) * 1000;
+    const interval = (60 / this.bpm) * 250;
     //Check if it's playing
     if (this.isPlaying) {
       //Clear the Interval

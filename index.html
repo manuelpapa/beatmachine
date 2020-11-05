@@ -10,7 +10,6 @@
     <div class="sequencer">
       <div class="kick-track">
         <div class="controls">
-          <h1>Kick</h1>
           <button data-track="0" class="mute kick-volume">
             <i class="fas fa-volume-mute"></i>
           </button>
@@ -41,11 +40,18 @@
           <div class="pad kick-pad b5"></div>
           <div class="pad kick-pad b6"></div>
           <div class="pad kick-pad b7"></div>
+          <div class="pad kick-pad b8"></div>
+          <div class="pad kick-pad b9"></div>
+          <div class="pad kick-pad b10"></div>
+          <div class="pad kick-pad b11"></div>
+          <div class="pad kick-pad b12"></div>
+          <div class="pad kick-pad b13"></div>
+          <div class="pad kick-pad b14"></div>
+          <div class="pad kick-pad b15"></div>
         </div>
       </div>
       <div class="snare-track">
         <div class="controls">
-          <h1>Snare</h1>
           <button data-track="1" class="mute snare-volume">
             <i class="fas fa-volume-mute"></i>
           </button>
@@ -68,63 +74,81 @@
           </select>
         </div>
         <div class="snare">
-          <div class="pad snare-pad b0"></div>
-          <div class="pad snare-pad b1"></div>
-          <div class="pad snare-pad b2"></div>
-          <div class="pad snare-pad b3"></div>
-          <div class="pad snare-pad b4"></div>
-          <div class="pad snare-pad b5"></div>
-          <div class="pad snare-pad b6"></div>
-          <div class="pad snare-pad b7"></div>
+            <div class="pad snare-pad b0"></div>
+            <div class="pad snare-pad b1"></div>
+            <div class="pad snare-pad b2"></div>
+            <div class="pad snare-pad b3"></div>
+            <div class="pad snare-pad b4"></div>
+            <div class="pad snare-pad b5"></div>
+            <div class="pad snare-pad b6"></div>
+            <div class="pad snare-pad b7"></div>
+            <div class="pad snare-pad b8"></div>
+            <div class="pad snare-pad b9"></div>
+            <div class="pad snare-pad b10"></div>
+            <div class="pad snare-pad b11"></div>
+            <div class="pad snare-pad b12"></div>
+            <div class="pad snare-pad b13"></div>
+            <div class="pad snare-pad b14"></div>
+            <div class="pad snare-pad b15"></div>
+          </div>
+        </div>
+        <div class="hihat-track">
+          <div class="controls">
+            <button data-track="2" class="mute hihat-volume">
+              <i class="fas fa-volume-mute"></i>
+            </button>
+            <select name="hihat-select" id="hihat-select">
+              <option
+                value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/hihat-808.wav"
+              >
+                Hihat 808
+              </option>
+              <option
+                value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/hihat-electro.wav"
+              >
+                Hihat electro
+              </option>
+              <option
+                value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/shaker-analog.wav"
+              >
+                Shaker analog
+              </option>
+            </select>
+          </div>
+          <div class="hihat">
+              <div class="pad hihat-pad b0"></div>
+              <div class="pad hihat-pad b1"></div>
+              <div class="pad hihat-pad b2"></div>
+              <div class="pad hihat-pad b3"></div>
+              <div class="pad hihat-pad b4"></div>
+              <div class="pad hihat-pad b5"></div>
+              <div class="pad hihat-pad b6"></div>
+              <div class="pad hihat-pad b7"></div>
+              <div class="pad hihat-pad b8"></div>
+              <div class="pad hihat-pad b9"></div>
+              <div class="pad hihat-pad b10"></div>
+              <div class="pad hihat-pad b11"></div>
+              <div class="pad hihat-pad b12"></div>
+              <div class="pad hihat-pad b13"></div>
+              <div class="pad hihat-pad b14"></div>
+              <div class="pad hihat-pad b15"></div>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+        <button class="play">Play</button>
+        <div class="tempo">
+            <p><span class="tempo-nr">125</span> bpm</p>
+          <input
+            type="range"
+            class="tempo-slider"
+            min="75"
+            max="200"
+            value="125"
+          />
         </div>
       </div>
-      <div class="hihat-track">
-        <div class="controls">
-          <h1>Hihat</h1>
-          <button data-track="2" class="mute hihat-volume">
-            <i class="fas fa-volume-mute"></i>
-          </button>
-          <select name="hihat-select" id="hihat-select">
-            <option
-              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/hihat-808.wav"
-            >
-              Hihat 808
-            </option>
-            <option
-              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/hihat-electro.wav"
-            >
-              Hihat electro
-            </option>
-            <option
-              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/shaker-analog.wav"
-            >
-              Shaker analog
-            </option>
-          </select>
-        </div>
-        <div class="hihat">
-          <div class="pad hihat-pad b0"></div>
-          <div class="pad hihat-pad b1"></div>
-          <div class="pad hihat-pad b2"></div>
-          <div class="pad hihat-pad b3"></div>
-          <div class="pad hihat-pad b4"></div>
-          <div class="pad hihat-pad b5"></div>
-          <div class="pad hihat-pad b6"></div>
-          <div class="pad hihat-pad b7"></div>
-        </div>
       </div>
-      <button class="play">Play</button>
-      <div class="tempo">
-        <input
-          type="range"
-          class="tempo-slider"
-          min="75"
-          max="200"
-          value="125"
-        />
-        <p>Tempo: <span class="tempo-nr">125</span></p>
-      </div>
-    </div>
     <audio
       class="kick-sound"
       src="https://github.com/manuelpapa/beatmachine/raw/main/sounds/kick-808.wav"
