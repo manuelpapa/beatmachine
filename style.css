@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Anonymous Pro", monospace;
   background: rgb(185, 180, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 i,
 svg {
@@ -16,6 +20,12 @@ svg {
   padding: 3rem;
   flex-direction: column;
   align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(131, 122, 255);
+  margin-bottom: 3rem;
 }
 .kick-track,
 .snare-track,
@@ -72,9 +82,10 @@ svg {
   margin: 0 1rem;
 }
 .controls button {
-  padding: 1rem;
+  padding: 0.93rem;
   border: none;
-  background-color: rgb(49, 61, 83);
+  background: rgb(131, 122, 255);
+
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -82,7 +93,8 @@ svg {
 }
 
 .mute.active {
-  background-color: rgb(199, 199, 199);
+  background: rgb(231, 230, 255);
+  color: rgb(131, 122, 255);
 }
 
 .pad {
@@ -93,46 +105,56 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background: rgb(160, 153, 255);
+  margin: 2rem;
+  width: 40vw;
 }
 .play {
+  font-family: "Anonymous Pro", monospace;
   margin-top: 1rem;
   padding: 1rem 2rem;
   font-size: 1rem;
   background: rgb(131, 122, 255);
-  border: 1px solid rgb(101, 91, 255);
+  border: 0.5px solid rgb(87, 75, 255);
   color: white;
   border: none;
   cursor: pointer;
 }
 
 .tempo {
-  width: 30%;
+  width: 90%;
 }
 
 .tempo-slider {
-  padding: 0.5rem;
-
+  padding: 0.2rem;
   -webkit-appearance: none;
   margin: 1rem 0;
   width: 100%;
   position: relative;
   cursor: pointer;
-  border-radius: 1rem;
+  border: 0.5px solid #696969;
 }
 
+input[type="range"]::-webkit-slider-thumb {
+  height: 2.5rem;
+  width: 1rem;
+  background: #837aff;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
 .tempo p {
-  font-size: 1rem;
   margin-top: 1rem;
+  font-size: 1rem;
   text-align: center;
 }
 
 select {
   padding: 1rem;
   width: 10rem;
-  font-size: 0.9rem;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 0.98rem;
   -webkit-appearance: none;
+  border: 0.5px solid #696969;
 }
 
 @keyframes playTrack {
