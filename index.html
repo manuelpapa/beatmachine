@@ -11,13 +11,25 @@
       <div class="kick-track">
         <div class="controls">
           <h1>Kick</h1>
-          <button data-reack="0" class="mute kick-volume">
+          <button data-track="0" class="mute kick-volume">
             <i class="fas fa-volume-mute"></i>
           </button>
           <select name="kick-select" id="kick-select">
-            <option value="./sounds/kick-808.wav">Kick 808</option>
-            <option value="./sounds/kick-big.wav">Kick big</option>
-            <option value="./sounds/kick-deep.wav">Kick deep</option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/kick-808.wav"
+            >
+              Kick 808
+            </option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/kick-big.wav"
+            >
+              Kick big
+            </option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/kick-deep.wav"
+            >
+              Kick deep
+            </option>
           </select>
         </div>
         <div class="kick">
@@ -34,13 +46,25 @@
       <div class="snare-track">
         <div class="controls">
           <h1>Snare</h1>
-          <button data-reack="0" class="mute snare-volume">
+          <button data-track="1" class="mute snare-volume">
             <i class="fas fa-volume-mute"></i>
           </button>
           <select name="snare-select" id="snare-select">
-            <option value="./sounds/snare-808.wav">Snare 808</option>
-            <option value="./sounds/snare-lofi01.wav">Snare lofi01</option>
-            <option value="./sounds/snare-lofi02.wav">Snare lofi02</option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/snare-808.wav"
+            >
+              Snare 808
+            </option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/snare-lofi01.wav"
+            >
+              Snare lofi01
+            </option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/snare-lofi02.wav"
+            >
+              Snare lofi02
+            </option>
           </select>
         </div>
         <div class="snare">
@@ -57,13 +81,25 @@
       <div class="hihat-track">
         <div class="controls">
           <h1>Hihat</h1>
-          <button data-reack="0" class="mute hihat-volume">
+          <button data-track="2" class="mute hihat-volume">
             <i class="fas fa-volume-mute"></i>
           </button>
           <select name="hihat-select" id="hihat-select">
-            <option value="./sounds/hihat-808.wav">Hihat 808</option>
-            <option value="./sounds/hihat-electro.wav">Hihat electro</option>
-            <option value="./sounds/shaker-analog.wav">Shaker analog</option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/hihat-808.wav"
+            >
+              Hihat 808
+            </option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/hihat-electro.wav"
+            >
+              Hihat electro
+            </option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/shaker-analog.wav"
+            >
+              Shaker analog
+            </option>
           </select>
         </div>
         <div class="hihat">
@@ -79,15 +115,24 @@
       </div>
       <button class="play">Play</button>
     </div>
-    <audio src="kick-sound" src="./sounds/kick-808.wav"></audio>
-    <audio src="snare-sound" src="./sounds/snare-808.wav"></audio>
-    <audio src="hihat-sound" src="./sounds/hihat-808.wav"></audio>
+    <audio
+      class="kick-sound"
+      src="https://github.com/manuelpapa/beatmachine/raw/main/sounds/kick-808.wav"
+    ></audio>
+    <audio
+      class="snare-sound"
+      src="https://github.com/manuelpapa/beatmachine/raw/main/sounds/snare-808.wav"
+    ></audio>
+    <audio
+      class="hihat-sound"
+      src="https://github.com/manuelpapa/beatmachine/raw/main/sounds/hihat-808.wav"
+    ></audio>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
-    />
-    <script src="./app.js"></script>
+    />;
+    <script src="app.js"></script>
   </body>
 </html>
