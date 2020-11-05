@@ -20,7 +20,7 @@ svg {
 .kick-pad,
 .snare-pad,
 .hihat-pad {
-  width: 5rem;
+  width: 2rem;
   height: 5rem;
   margin: 1rem 0.5rem;
   cursor: pointer;
