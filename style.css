@@ -77,6 +77,10 @@ svg {
   transition: all 0.5s ease;
 }
 
+.mute.active {
+  background-color: rgb(199, 199, 199);
+}
+
 .pad {
   transition: all 0.5s ease;
 }
