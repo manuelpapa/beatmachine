@@ -8,12 +8,15 @@ class DrumKit {
       "https://github.com/manuelpapa/beatmachine/raw/main/sounds/snare-808.wav";
     this.currentHihat =
       "https://github.com/manuelpapa/beatmachine/raw/main/sounds/hihat-808.wav";
-    this.currentclap =
+    this.currentClap =
       "https://github.com/manuelpapa/beatmachine/raw/main/sounds/clap-808.wav";
+    this.currentPercussion =
+      "https://github.com/manuelpapa/beatmachine/raw/main/sounds/tom-808.wav";
     this.kickAudio = document.querySelector(".kick-sound");
     this.snareAudio = document.querySelector(".snare-sound");
     this.hihatAudio = document.querySelector(".hihat-sound");
     this.clapAudio = document.querySelector(".clap-sound");
+    this.percussionAudio = document.querySelector(".percussion-sound");
     this.index = 0;
     this.bpm = 125;
     this.isPlaying = null;
@@ -49,6 +52,10 @@ class DrumKit {
         if (bar.classList.contains("clap-pad")) {
           this.clapAudio.currentTime = 0;
           this.clapAudio.play();
+        }
+        if (bar.classList.contains("percussion-pad")) {
+          this.percussionAudio.currentTime = 0;
+          this.percussionAudio.play();
         }
       }
     });
@@ -92,6 +99,9 @@ class DrumKit {
       case "clap-select":
         this.clapAudio.src = selectionValue;
         break;
+      case "percussion-select":
+        this.percussionAudio.src = selectionValue;
+        break;
     }
   }
   mute(e) {
@@ -111,6 +121,9 @@ class DrumKit {
         case "3":
           this.clapAudio.volume = 0;
           break;
+        case "4":
+          this.percussionAudio.volume = 0;
+          break;
       }
     } else {
       switch (muteIndex) {
@@ -125,6 +138,9 @@ class DrumKit {
           break;
         case "3":
           this.clapAudio.volume = 1;
+          break;
+        case "4":
+          this.percussionAudio.volume = 1;
           break;
       }
     }

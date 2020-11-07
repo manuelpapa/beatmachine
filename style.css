@@ -30,7 +30,8 @@ h1 {
 .kick-track,
 .snare-track,
 .hihat-track,
-.clap-track {
+.clap-track,
+.percussion-track {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +40,8 @@ h1 {
 .kick-pad,
 .snare-pad,
 .hihat-pad,
-.clap-pad {
+.clap-pad,
+.percussion-pad {
   min-width: 2rem;
   height: 3rem;
   margin: 0 0.3rem;
@@ -63,6 +65,10 @@ h1 {
   background: rgb(254, 255, 179);
   border: 1px rgb(240, 226, 31) solid;
 }
+.percussion-pad {
+  background: rgb(243, 148, 255);
+  border: 1px rgb(250, 89, 202) solid;
+}
 .kick-pad.active {
   background: rgb(95, 156, 255);
 }
@@ -70,16 +76,20 @@ h1 {
   background: rgb(95, 255, 143);
 }
 .hihat-pad.active {
-  background: rgb(255, 172, 95);
+  background: rgb(255, 157, 65);
 }
 .clap-pad.active {
-  background: rgb(240, 226, 31);
+  background: rgb(255, 241, 43);
+}
+.percussion-pad.active {
+  background: rgb(240, 31, 177);
 }
 
 .kick,
 .snare,
 .hihat,
-.clap {
+.clap,
+.percussion {
   display: flex;
   flex-grow: 3;
   justify-content: space-evenly;

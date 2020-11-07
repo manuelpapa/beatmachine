@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap"
+      rel="stylesheet"
+    />
     <title>Beatmachine</title>
   </head>
   <body>
     <div class="sequencer">
-        <h1>Beatmachine</h1>
+      <h1>Beatmachine</h1>
       <div class="kick-track">
         <div class="controls">
           <button data-track="0" class="mute kick-volume">
@@ -76,123 +79,174 @@
           </select>
         </div>
         <div class="snare">
-            <div class="pad snare-pad b0"></div>
-            <div class="pad snare-pad b1"></div>
-            <div class="pad snare-pad b2"></div>
-            <div class="pad snare-pad b3"></div>
-            <div class="pad snare-pad b4"></div>
-            <div class="pad snare-pad b5"></div>
-            <div class="pad snare-pad b6"></div>
-            <div class="pad snare-pad b7"></div>
-            <div class="pad snare-pad b8"></div>
-            <div class="pad snare-pad b9"></div>
-            <div class="pad snare-pad b10"></div>
-            <div class="pad snare-pad b11"></div>
-            <div class="pad snare-pad b12"></div>
-            <div class="pad snare-pad b13"></div>
-            <div class="pad snare-pad b14"></div>
-            <div class="pad snare-pad b15"></div>
-          </div>
-        </div>
-        <div class="hihat-track">
-          <div class="controls">
-            <button data-track="2" class="mute hihat-volume">
-              <i class="fas fa-volume-mute"></i>
-            </button>
-            <select name="hihat-select" id="hihat-select">
-              <option
-                value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/hihat-808.wav"
-              >
-                Hihat 808
-              </option>
-              <option
-                value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/hihat-electro.wav"
-              >
-                Hihat electro
-              </option>
-              <option
-                value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/shaker-analog.wav"
-              >
-                Shaker analog
-              </option>
-            </select>
-          </div>
-          <div class="hihat">
-              <div class="pad hihat-pad b0"></div>
-              <div class="pad hihat-pad b1"></div>
-              <div class="pad hihat-pad b2"></div>
-              <div class="pad hihat-pad b3"></div>
-              <div class="pad hihat-pad b4"></div>
-              <div class="pad hihat-pad b5"></div>
-              <div class="pad hihat-pad b6"></div>
-              <div class="pad hihat-pad b7"></div>
-              <div class="pad hihat-pad b8"></div>
-              <div class="pad hihat-pad b9"></div>
-              <div class="pad hihat-pad b10"></div>
-              <div class="pad hihat-pad b11"></div>
-              <div class="pad hihat-pad b12"></div>
-              <div class="pad hihat-pad b13"></div>
-              <div class="pad hihat-pad b14"></div>
-              <div class="pad hihat-pad b15"></div>
-            </div>
-          </div>
-          <div class="clap-track">
-            <div class="controls">
-              <button data-track="3" class="mute clap-volume">
-                <i class="fas fa-volume-mute"></i>
-              </button>
-              <select name="clap-select" id="clap-select">
-                <option
-                  value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/clap-808.wav"
-                >
-                  clap 808
-                </option>
-                <option
-                  value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/clap-electro.wav"
-                >
-                  clap electro
-                </option>
-                <option
-                  value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/clap-fat.wav"
-                >
-                  clap fat
-                </option>
-              </select>
-            </div>
-            <div class="clap">
-                <div class="pad clap-pad b0"></div>
-                <div class="pad clap-pad b1"></div>
-                <div class="pad clap-pad b2"></div>
-                <div class="pad clap-pad b3"></div>
-                <div class="pad clap-pad b4"></div>
-                <div class="pad clap-pad b5"></div>
-                <div class="pad clap-pad b6"></div>
-                <div class="pad clap-pad b7"></div>
-                <div class="pad clap-pad b8"></div>
-                <div class="pad clap-pad b9"></div>
-                <div class="pad clap-pad b10"></div>
-                <div class="pad clap-pad b11"></div>
-                <div class="pad clap-pad b12"></div>
-                <div class="pad clap-pad b13"></div>
-                <div class="pad clap-pad b14"></div>
-                <div class="pad clap-pad b15"></div>
-              </div>
-            </div>
-          </div>
-        <div class="menu">
-        <button class="play">Play</button>
-        <div class="tempo">
-            <p><span class="tempo-nr">125</span> bpm</p>
-          <input
-            type="range"
-            class="tempo-slider"
-            min="75"
-            max="200"
-            value="125"
-          />
+          <div class="pad snare-pad b0"></div>
+          <div class="pad snare-pad b1"></div>
+          <div class="pad snare-pad b2"></div>
+          <div class="pad snare-pad b3"></div>
+          <div class="pad snare-pad b4"></div>
+          <div class="pad snare-pad b5"></div>
+          <div class="pad snare-pad b6"></div>
+          <div class="pad snare-pad b7"></div>
+          <div class="pad snare-pad b8"></div>
+          <div class="pad snare-pad b9"></div>
+          <div class="pad snare-pad b10"></div>
+          <div class="pad snare-pad b11"></div>
+          <div class="pad snare-pad b12"></div>
+          <div class="pad snare-pad b13"></div>
+          <div class="pad snare-pad b14"></div>
+          <div class="pad snare-pad b15"></div>
         </div>
       </div>
+      <div class="hihat-track">
+        <div class="controls">
+          <button data-track="2" class="mute hihat-volume">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select name="hihat-select" id="hihat-select">
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/hihat-808.wav"
+            >
+              Hihat 808
+            </option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/hihat-electro.wav"
+            >
+              Hihat electro
+            </option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/shaker-analog.wav"
+            >
+              Shaker analog
+            </option>
+          </select>
+        </div>
+        <div class="hihat">
+          <div class="pad hihat-pad b0"></div>
+          <div class="pad hihat-pad b1"></div>
+          <div class="pad hihat-pad b2"></div>
+          <div class="pad hihat-pad b3"></div>
+          <div class="pad hihat-pad b4"></div>
+          <div class="pad hihat-pad b5"></div>
+          <div class="pad hihat-pad b6"></div>
+          <div class="pad hihat-pad b7"></div>
+          <div class="pad hihat-pad b8"></div>
+          <div class="pad hihat-pad b9"></div>
+          <div class="pad hihat-pad b10"></div>
+          <div class="pad hihat-pad b11"></div>
+          <div class="pad hihat-pad b12"></div>
+          <div class="pad hihat-pad b13"></div>
+          <div class="pad hihat-pad b14"></div>
+          <div class="pad hihat-pad b15"></div>
+        </div>
       </div>
+      <div class="clap-track">
+        <div class="controls">
+          <button data-track="3" class="mute clap-volume">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select name="clap-select" id="clap-select">
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/clap-808.wav"
+            >
+              clap 808
+            </option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/clap-electro.wav"
+            >
+              clap electro
+            </option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/clap-fat.wav"
+            >
+              clap fat
+            </option>
+          </select>
+        </div>
+        <div class="clap">
+          <div class="pad clap-pad b0"></div>
+          <div class="pad clap-pad b1"></div>
+          <div class="pad clap-pad b2"></div>
+          <div class="pad clap-pad b3"></div>
+          <div class="pad clap-pad b4"></div>
+          <div class="pad clap-pad b5"></div>
+          <div class="pad clap-pad b6"></div>
+          <div class="pad clap-pad b7"></div>
+          <div class="pad clap-pad b8"></div>
+          <div class="pad clap-pad b9"></div>
+          <div class="pad clap-pad b10"></div>
+          <div class="pad clap-pad b11"></div>
+          <div class="pad clap-pad b12"></div>
+          <div class="pad clap-pad b13"></div>
+          <div class="pad clap-pad b14"></div>
+          <div class="pad clap-pad b15"></div>
+        </div>
+      </div>
+      <div class="percussion-track">
+        <div class="controls">
+          <button data-track="4" class="mute percussion-volume">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select name="percussion-select" id="percussion-select">
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/tom-808.wav"
+            >
+              tom 808
+            </option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/perc-808.wav"
+            >
+              wood 808
+            </option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/crash-808.wav"
+            >
+              crash 808
+            </option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/openhat-808.wav"
+            >
+              openhat 808
+            </option>
+            <option
+              value="https://github.com/manuelpapa/beatmachine/raw/main/sounds/cowbell-808.wav"
+            >
+              cowbell 808
+            </option>
+          </select>
+        </div>
+        <div class="percussion">
+          <div class="pad percussion-pad b0"></div>
+          <div class="pad percussion-pad b1"></div>
+          <div class="pad percussion-pad b2"></div>
+          <div class="pad percussion-pad b3"></div>
+          <div class="pad percussion-pad b4"></div>
+          <div class="pad percussion-pad b5"></div>
+          <div class="pad percussion-pad b6"></div>
+          <div class="pad percussion-pad b7"></div>
+          <div class="pad percussion-pad b8"></div>
+          <div class="pad percussion-pad b9"></div>
+          <div class="pad percussion-pad b10"></div>
+          <div class="pad percussion-pad b11"></div>
+          <div class="pad percussion-pad b12"></div>
+          <div class="pad percussion-pad b13"></div>
+          <div class="pad percussion-pad b14"></div>
+          <div class="pad percussion-pad b15"></div>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <button class="play">Play</button>
+      <div class="tempo">
+        <p><span class="tempo-nr">125</span> bpm</p>
+        <input
+          type="range"
+          class="tempo-slider"
+          min="75"
+          max="200"
+          value="125"
+        />
+      </div>
+    </div>
     <audio
       class="kick-sound"
       src="https://github.com/manuelpapa/beatmachine/raw/main/sounds/kick-808.wav"
@@ -208,6 +262,10 @@
     <audio
       class="clap-sound"
       src="https://github.com/manuelpapa/beatmachine/raw/main/sounds/clap-808.wav"
+    ></audio>
+    <audio
+      class="percussion-sound"
+      src="https://github.com/manuelpapa/beatmachine/raw/main/sounds/tom-808.wav"
     ></audio>
     <link
       rel="stylesheet"
